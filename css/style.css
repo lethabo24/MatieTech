@@ -584,6 +584,40 @@ h3 {
   outline: none;
 }
 
+/* line 24, ../../Arafath/CL/December/234. Finance/HTML/scss/_btn.scss */
+.boxed-btn5 {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#F91842+0,fd8e5e+100 */
+  background: #F91842;
+  color: #fff;
+  display: inline-block;
+  padding: 11px 29px 13px 29px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  border: 1px solid transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff !important;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.test{
+  width:300px;
+  display:inline-block;
+  overflow: auto;
+  white-space: nowrap;
+  margin:0px auto;
+  justify-content: space-between;
+  /* border:1px red solid; */
+}
 /* line 133, ../../Arafath/CL/December/234. Finance/HTML/scss/_btn.scss */
 .line-button {
   color: #919191;
