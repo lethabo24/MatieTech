@@ -2485,9 +2485,9 @@ input[type=checkbox] + label {
 }
 
 /* line 9, ../../Arafath/CL/December/234. Finance/HTML/scss/_check.scss */
-input[type=checkbox] {
-  display: none;
-}
+/* input[type=checkbox] { */
+  /* display: none; */
+/* } */
 
 /* line 13, ../../Arafath/CL/December/234. Finance/HTML/scss/_check.scss */
 input[type=checkbox] + label:before {
