@@ -24,13 +24,42 @@ label{
     color: #08ffd1;  
     font-size: 17px;  
 }  
-#Uname{  
+#FullName{  
     width: 300px;  
     height: 30px;  
     border: none;  
     border-radius: 3px;  
     padding-left: 8px;  
 }  
+
+#CellphoneNumber{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+} 
+#Address{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+#Occupation{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+#IDNumber{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
 #Pass{  
     width: 300px;  
     height: 30px;  
@@ -39,7 +68,15 @@ label{
     padding-left: 8px;  
       
 }  
-#log{  
+#Pass2{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#signup{  
     width: 300px;  
     height: 30px;  
     border: none;  
