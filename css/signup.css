@@ -1,21 +1,19 @@
-
-
-body  
-{  
+body{  
     margin: 0;  
     padding: 0;  
     background-color:#6abadeba;  
     font-family: 'Arial';  
-}  
-.signup{ 
+} 
+
+.sign{  
     width: 382px;  
-    
+    overflow: hidden;  
     margin: auto;  
     margin: 20 0 0 450px;  
     padding: 80px;  
     background: #23463f;  
-    border-radius: 15px ;   
-}  
+    border-radius: 15px ;    
+}
 
 h2{  
     text-align: center;  
