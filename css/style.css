@@ -6989,3 +6989,20 @@ h6 {
   background: #17a2b8;
   cursor: pointer;
 }
+
+.bg-new{
+  background-color: #5db2ff;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #33D4D6;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
