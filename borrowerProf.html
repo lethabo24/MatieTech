@@ -130,8 +130,9 @@
                               <p class="card-text">Credit Score</p>
                               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                               <br><br>
-                              <a class="boxed-btn3" type="submit" href="indexLoggedIn.html">Lend</a>
-                            <a class="boxed-btn3" type="submit" href="index.html">Cancel</a>
+                              <a href="#myModal" class="boxed-btn3" data-toggle="modal">Lend</a>
+                              <a href="#myModal2" class="boxed-btn2" data-toggle="modal">Reject</a>
+                            
                             </div>
                           </div>
                         </div>
@@ -140,6 +141,43 @@
                   </div>
             </div>
 
+            <div id="myModal" class="modal fade" data-backdrop="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">	
+                            <h3 class="modal-title w-100">Amazing!</h3>	
+                            <span class="close" data-dismiss="modal">&times;</span>		
+                            
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center">Ah Great. X has been notified. Have a look at your profile to see if they accept your loan</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="boxed-btn3" type="submit" href="profilesBorrowers.html">Borrowers</a>
+                            <a class="boxed-btn3" type="submit" href="user_profile.html">View Applicants</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div id="myModal2" class="modal fade" data-backdrop="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">	
+                            <h3 class="modal-title w-100">Ah Bollocks!</h3>	
+                            <span class="close" data-dismiss="modal">&times;</span>		
+                            
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center">Well that wasn't meant to be. So what next?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="boxed-btn3" type="submit" href="profilesBorrowers.html">Borrowers</a>
+                            <a class="boxed-btn3" type="submit" href="user_profile.html">View Applicants</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
          
 
 
