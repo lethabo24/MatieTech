@@ -100,9 +100,17 @@ ul {
 
 /* line 57, ../../Arafath/CL/December/234. Finance/HTML/scss/theme-default.scss */
 li {
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 
+.theeli {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 16px;
+}
 /* line 60, ../../Arafath/CL/December/234. Finance/HTML/scss/theme-default.scss */
 p {
   font-size: 16px;
