@@ -130,7 +130,7 @@
                               <p class="card-text">Carmen Bio. Carmen is  is a blah blah blah blah</p>
                               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                               <br><br>
-                              <a class="boxed-btn3" type="submit" href="indexLoggedIn.html">Apply</a>
+                              <a href="#myModal" class="boxed-btn3" data-toggle="modal">Apply</a>
                             <a class="boxed-btn3" type="submit" href="index.html">Cancel</a>
                             </div>
                           </div>
@@ -139,6 +139,28 @@
                     </div>
                   </div>
             </div>
+  </div>
+
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade" data-backdrop="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">	
+                <h3 class="modal-title w-100">Success!</h3>	
+                <span class="close" data-dismiss="modal">&times;</span>		
+				
+			</div>
+			<div class="modal-body">
+				<p class="text-center">Your application has been sent. Check your profile for feedback!</p>
+			</div>
+			<div class="modal-footer">
+                <a class="boxed-btn3" type="submit" href="index.html">Lenders</a>
+				<a class="boxed-btn3" type="submit" href="user_profile.html">View Applications</a>
+			</div>
+		</div>
+	</div>
+</div>     
         </div>
     </div>
     <!-- service_area_end  -->
@@ -337,6 +359,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
     <script src="js/slick.min.js"></script>
+
+
 
 
 
