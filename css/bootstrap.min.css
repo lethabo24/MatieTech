@@ -4069,9 +4069,15 @@ tbody.collapse.show {
     padding: .5rem 1rem
 }
 
+.nav-item .nav-link.active{
+    color: #721c24;
+}
+
+
 .nav-link:focus,
 .nav-link:hover {
     text-decoration: none
+
 }
 
 .nav-link.disabled {
