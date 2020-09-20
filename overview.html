@@ -133,9 +133,9 @@
 				<div class="card p-3">
 				  <div class="e-navlist e-navlist--active-bg">
 					<ul class="nav">
-                      <li class="nav-item"><a class="nav-link px-2" href="./overview.html"><i class="fa fa-fw fa-bar-chart mr-1"></i><span>Overview</span></a></li>
+                      <li class="nav-item"><a class="nav-link px-2 active" href="overview.html"><i class="fa fa-fw fa-bar-chart mr-1"></i><span>Overview</span></a></li>
                       <li class="nav-item"><a class="nav-link px-2" href="applicants.html"><i class="fa fa-user-plus mr-1"></i><span>Applicants</span></a></li>
-                      <li class="nav-item"><a class="nav-link px-2 active" href="activeLoans.html"><i class="fa fa-users mr-1"></i><span>Active Loans</span></a></li>
+                      <li class="nav-item"><a class="nav-link px-2" href="activeLoans.html"><i class="fa fa-users mr-1"></i><span>Active Loans</span></a></li>
                       <li class="nav-item"><a class="nav-link px-2" href="pastLoans.html"><i class="fa fa-archive mr-1"></i><span>Past Loans</span></a></li>
                       <li class="nav-item"><a class="nav-link px-2" href="editBankingDetails.html"><i class="fa fa-credit-card-alt mr-1"></i><span>Banking Settings</span></a></li>
                       <li class="nav-item"><a class="nav-link px-2" href="editUserProfile.html"><i class="fa fa-fw fa-cog mr-1"></i><span>Settings</span></a></li>
@@ -143,60 +143,82 @@
 				  </div>
 				</div>
 			  </div>
-              <div class="row">
-                <div class="container">
-                    <h2>Card Deck</h2> 
+			  <div class="container" style="background-color:#343a40;">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="dbox dbox--color-1">
+							<div class="dbox__icon">
+								<i class="glyphicon glyphicon-cloud"></i>
+							</div>
+							<div class="dbox__body">
+								<span class="dbox__count">50</span>
+								<span class="dbox__title">Loan Applications Received</span>
+							</div>
+							
+							<div class="dbox__action">
+								<button class="dbox__action__btn">More Info</button>
+							</div>				
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="dbox dbox--color-2">
+							<div class="dbox__icon">
+								<i class="glyphicon glyphicon-download"></i>
+							</div>
+							<div class="dbox__body">
+								<span class="dbox__count">25</span>
+								<span class="dbox__title">Loans Approved</span>
+							</div>
+							
+							<div class="dbox__action">
+								<button class="dbox__action__btn">More Info</button>
+							</div>				
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="dbox dbox--color-3">
+							<div class="dbox__icon">
+								<i class="glyphicon glyphicon-heart"></i>
+							</div>
+							<div class="dbox__body">
+								<span class="dbox__count">10</span>
+								<span class="dbox__title">Donations Made</span>
+							</div>
+							
+							<div class="dbox__action">
+								<button class="dbox__action__btn">More Info</button>
+							</div>				
+						</div>
+					</div>
+				</div>
+			</div>
+<br><br>
 
-                    <div class="card-deck">
-                      <div class="card bg-new">
-                        <div class="card-body text-center">
-                          <div class="col-12 col-sm-auto mb-3">
-                            <div class="mx-auto" style="width: 140px;">
-                              <div class="d-flex justify-content-center align-items-center rounded" style="height: 120px; background-color: rgb(233, 236, 239);">
-                                <span style="color: rgb(166, 168, 170); font: bold 8pt Arial;">140x140</span>
-                              </div>
-                            </div>
-                          </div>
-                          <h2>John Doe</h2>
-                          <p class="card-text">Loan Amount: R1250</p>
-                          <p class="card-text">Loan Term: 6 Months<p>
-                          <a class="boxed-btn3" type="submit" href="borrowerProf.html">View</a>
-                        </div>
-                      </div>
-                      <div class="card bg-new">
-                        <div class="card-body text-center">
-                          <div class="col-12 col-sm-auto mb-3">
-                            <div class="mx-auto" style="width: 140px;">
-                              <div class="d-flex justify-content-center align-items-center rounded" style="height: 120px; background-color: rgb(233, 236, 239);">
-                                <span style="color: rgb(166, 168, 170); font: bold 8pt Arial;">140x140</span>
-                              </div>
-                            </div>
-                          </div>
-                          <h2>John Davis</h2>
-                          <p class="card-text">Loan Amount: R1000</p>
-                          <p class="card-text">Loan Term: 4 Months<p>
-                          <a class="boxed-btn3" type="submit" href="borrowerProf.html">View</a>
-                        </div>
-                      </div>
-                      <div class="card bg-new">
-                        <div class="card-body text-center">
-                          <div class="col-12 col-sm-auto mb-3">
-                            <div class="mx-auto" style="width: 140px;">
-                              <div class="d-flex justify-content-center align-items-center rounded" style="height: 120px; background-color: rgb(233, 236, 239);">
-                                <span style="color: rgb(166, 168, 170); font: bold 8pt Arial;">140x140</span>
-                              </div>
-                            </div>
-                          </div>
-                          <h2>John Daniels</h2>
-                          <p class="card-text">Loan Amount: R1250</p>
-                          <p class="card-text">Loan Term: 6 Months<p>
-                          <a class="boxed-btn3" type="submit" href="borrowerProf.html">View</a>
-                        </div>
-                      </div>
-                    </div>
-                    <br><br>
-                  </div>
-            </div>
+						<!-- <div class="container bootstrap snippet">
+							<div class="row">
+							  <div class="col-lg-2 col-sm-6">
+								<div class="circle-tile ">
+								  <a href="#"><div class="circle-tile-heading dark-blue"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+								  <div class="circle-tile-content dark-blue">
+									<div class="circle-tile-description text-faded"> Users</div>
+									<div class="circle-tile-number text-faded ">265</div>
+									<a class="circle-tile-footer" href="#">More Info<i class="fa fa-chevron-circle-right"></i></a>
+								  </div>
+								</div>
+							  </div>
+							   
+							  <div class="col-lg-2 col-sm-6">
+								<div class="circle-tile ">
+								  <a href="#"><div class="circle-tile-heading red"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+								  <div class="circle-tile-content red">
+									<div class="circle-tile-description text-faded"> Users Online </div>
+									<div class="circle-tile-number text-faded ">10</div>
+									<a class="circle-tile-footer" href="#">More Info<i class="fa fa-chevron-circle-right"></i></a>
+								  </div>
+								</div>
+							  </div> 
+							</div> 
+						  </div> -->
 
 
 <!--===============================================================================================-->
