@@ -4125,6 +4125,9 @@ tbody.collapse.show {
 .nav-pills .nav-link {
     border-radius: .25rem
 }
+.nav-pills .nav-link.active {
+    color: white
+}
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {

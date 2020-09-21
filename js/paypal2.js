@@ -1,4 +1,15 @@
 // Set up a payment
+payment: function (data, actions) {
+  return actions.payment.create({
+    transactions: [{
+      amount: {
+        total: '0.01',
+        currency: 'ZAR'
+      }
+    }]
+  });
+}
+// Set up a payment
 payment: function(data, actions) {
     return actions.payment.create({
       transactions: [{
@@ -56,3 +67,13 @@ payment: function(data, actions) {
       note_to_payer: 'Contact us for any questions on your order.'
     });
   }
+
+  // Execute the payment
+onAuthorize: function(data, actions)
+{
+  return actions.payment.execute().then(function()
+  {
+    // Show a confirmation message to the buyer
+    window.alert('Thank you for your purchase!');
+  });
+}

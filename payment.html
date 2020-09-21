@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
+    
 
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
@@ -88,7 +89,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="bradcam_text">
-                        <h3>Login Page</h3>
+                        <h3>Payment</h3>
                     </div>
                 </div>
             </div>
@@ -97,7 +98,7 @@
     <!--/ bradcam_area  -->
     
     <!-- apply_form_area -->
-    <div class="apply_form_area">
+    <!-- <div class="apply_form_area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -148,7 +149,90 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <div class="container py-5">
+        <!-- For demo purpose -->
+        <div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4">Payment</h1>
+            </div>
+        </div> <!-- End -->
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="card ">
+                    <div class="card-header">
+                        <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                            <!-- Credit card form tabs -->
+                            <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                                <!-- <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Credit Card </a> </li> -->
+                                <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link active"> <i class="fa fa-paypal mr-1"></i> Paypal </a> </li>
+                                <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fa fa-credit-card mr-1"></i> Ozow </a> </li>
+                                
+                                
+                            </ul>
+                        </div> <!-- End -->
+                        <!-- Credit card form content -->
+                        
+                        <div class="tab-content">
+                            <!-- credit card info-->
+                            <!-- <div id="credit-card" class="tab-pane fade show active pt-3">
+                                <form role="form">
+                                    <div class="form-group"> <label for="username">
+                                            <h6>Card Owner</h6>
+                                        </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+                                    <div class="form-group"> <label for="cardNumber">
+                                            <h6>Card number</h6>
+                                        </label>
+                                        <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                                            <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="form-group"> <label><span class="hidden-xs">
+                                                        <h6>Expiration Date</h6>
+                                                    </span></label>
+                                                <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                                    <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                                </label> <input type="text" required class="form-control"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+                                </form>
+                            </div> -->
+                    
+                        
+                         <!-- End -->
+
+                         <!-- bank transfer info -->
+
+                         <div id="paypal" class="tab-pane fade show active pt-3">
+                            <h6 class="pb-2">Select your paypal account type</h6>
+                            <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked> Domestic </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">International </label></div>
+                            <p> <button type="button" class="btn btn-primary" id="paypal-button"></button> </p>
+                            <p class="text-muted"> Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your payment. </p>
+                        </div>
+                         <div id="net-banking" class="tab-pane fade show pt-3">
+                       
+                            <div class="form-group">
+                                <p> <button type="button" class="btn btn-primary" onclick="window.location.href='https://pay.ozow.com/fc1e0eb7-bdc9-423a-b75d-4f57fab95095/Secure';"> Proceed to Ozow Payment</button> </p>
+                            </div>
+                            <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your payment. </p>
+                        </div>
+                        <!-- Paypal info -->
+                         <!-- End -->
+                        <!-- bank transfer info -->
+                         <!-- End -->
+                        <!-- End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     <!--/ apply_form_area -->
 
 
@@ -275,7 +359,53 @@
 
 
     <script src="js/main.js"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script src="js/paypal2.js"></script>
 
+    <script>
+        paypal.Button.render({
+          // Configure environment
+          env: 'sandbox',
+          client: {
+            sandbox: 'demo_sandbox_client_id',
+            production: 'demo_production_client_id'
+          },
+          // Customize button (optional)
+          locale: 'en_ZA',
+          style: {
+            size: 'small',
+            color: 'gold',
+            shape: 'pill',
+          },
+      
+          // Enable Pay Now checkout flow (optional)
+          commit: true,
+      
+          // Set up a payment
+          payment: function(data, actions) {
+            return actions.payment.create({
+              transactions: [{
+                amount: {
+                  total: '0.01',
+                  currency: 'USD'
+                }
+              }]
+            });
+          },
+          // Execute the payment
+          onAuthorize: function(data, actions) {
+            return actions.payment.execute().then(function() {
+              // Show a confirmation message to the buyer
+              window.alert('Thank you for your purchase!');
+            });
+          }
+        }, '#paypal-button');
+      
+      </script>
+
+<!-- <script>$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+    })</script> -->
 
     <!-- <script>
         function myFunction() {

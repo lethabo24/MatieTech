@@ -120,14 +120,13 @@
                 </div>
                 <div class="col-md-12">
                     <p>Specify Minimum Amount:</p>
-                    <input type="range" min="100" max="50000" value="50" class="slider" id="myRange">
-  <p>Value <span id="demo"></span></p>
+                    <input  type="range" min="100" max="5000"  class="slider" id="myRange"><p>Min <span id="demo"></span></p>
                     <!-- <input type="text" placeholder="Amount" /> -->
                 </div>
+
                 <div class="col-md-12">
                   <p>Specify Maximum Amount:</p>
-                  <input type="range" min="100" max="50000" value="50" class="slider" id="myRange2">
-<p>Value <span id="demo2"></span></p>
+                  <input type="range" min="100" max="5000"  class="slider" id="myRange2"> <p>Max <span id="demo2"></span></p>
                   <!-- <input type="text" placeholder="Amount" /> -->
               </div>
  
@@ -298,15 +297,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       slider.oninput = function() {
         output.innerHTML = this.value;
       }
+
       </script>
     
           <script>
-            var slider = document.getElementById("myRange2");
-            var output = document.getElementById("demo2");
-            output.innerHTML = slider.value;
+            var slider1 = document.getElementById("myRange2");
+            var output1 = document.getElementById("demo2");
+            output1.innerHTML = slider.value;
             
-            slider.oninput = function() {
-              output.innerHTML = this.value;
+            slider1.oninput = function() {
+              output1.innerHTML = this.value;
             }
             </script>
 
